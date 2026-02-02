@@ -1,0 +1,11 @@
+# Create the virtual environment folder called 'vend'
+python3 -m venv vend
+
+# Source (activate) the environment
+source vend/bin/activate
+
+# Install the dependencies
+pip install -r requirements.txt
+
+# Run script
+python generate_resume.py

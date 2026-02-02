@@ -1,0 +1,138 @@
+{
+    "name": "John Doe",
+    "contact_info": {
+        "phone": "+1 555-0123-456",
+        "email": "john.doe@example.com",
+        "linkedin_url": "https://www.linkedin.com/in/johndoe-fake/",
+        "github_url": "https://github.com/johndoe-fake"
+    },
+    "summary": [
+        {
+            "text": "<b>Senior Full-Stack Engineer</b> with 8+ years of experience building scalable web applications. Expert in modern JavaScript ecosystems (React, Node.js) and cloud-native architectures. Proven ability to lead teams, design RESTful APIs, and optimize frontend performance.",
+            "target_audiences": [
+                "fullstack",
+                "frontend",
+                "backend"
+            ]
+        },
+        {
+            "text": "<b>DevOps & Site Reliability Engineer</b> passionate about automation and infrastructure as code. Specialized in Kubernetes, AWS, and CI/CD pipelines. Experienced in scaling high-traffic systems and ensuring 99.99% availability through robust monitoring and security practices.",
+            "target_audiences": [
+                "devops",
+                "backend"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "text": "<b>Languages:</b> JavaScript (ES6+), TypeScript, Python, Go, Bash<br/><b>Frontend:</b> React, Next.js, Redux, Tailwind CSS, HTML5/CSS3<br/><b>Backend:</b> Node.js, Express.js, Django, PostgreSQL, Redis, MongoDB<br/><b>DevOps:</b> Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Prometheus",
+            "target_audiences": [
+                "fullstack",
+                "backend",
+                "devops"
+            ]
+        },
+        {
+            "text": "<b>Languages:</b> JavaScript, TypeScript, HTML5, CSS3<br/><b>Frontend:</b> React, Vue.js, Next.js, Webpack, Babel, Sass, Jest, Cypress<br/><b>UI/UX:</b> Figma, Material-UI, Styled-Components, Accessibility (WCAG)",
+            "target_audiences": [
+                "frontend"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "title": "Senior Software Engineer",
+            "company": "TechNova Solutions",
+            "dates": "Jan 2022 \u2013 Present",
+            "bullets": [
+                {
+                    "text": "Architected and built a microservices-based e-commerce platform using Node.js and Go, handling 10k+ concurrent users.",
+                    "target_audiences": [
+                        "backend",
+                        "fullstack"
+                    ]
+                },
+                {
+                    "text": "Led the migration of the legacy monolithic frontend to a modern Next.js application, improving Core Web Vitals by 40%.",
+                    "target_audiences": [
+                        "frontend",
+                        "fullstack"
+                    ]
+                },
+                {
+                    "text": "Implemented a fully automated CI/CD pipeline using GitHub Actions and ArgoCD, reducing deployment time from 1 hour to 5 minutes.",
+                    "target_audiences": [
+                        "devops",
+                        "backend"
+                    ]
+                },
+                {
+                    "text": "Designed and deployed a serverless data processing pipeline on AWS Lambda to handle real-time analytics.",
+                    "target_audiences": [
+                        "backend",
+                        "devops",
+                        "fullstack"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Orbit Systems",
+            "dates": "Jun 2019 \u2013 Dec 2021",
+            "bullets": [
+                {
+                    "text": "Developed responsive, interactive user interfaces using React and Redux, ensuring cross-browser compatibility.",
+                    "target_audiences": [
+                        "frontend",
+                        "fullstack"
+                    ]
+                },
+                {
+                    "text": "Built and maintained RESTful APIs using Python (Django) and integrated with PostgreSQL databases.",
+                    "target_audiences": [
+                        "backend",
+                        "fullstack"
+                    ]
+                },
+                {
+                    "text": "Containerized application services using Docker and orchestrated deployments on an on-premise Kubernetes cluster.",
+                    "target_audiences": [
+                        "devops",
+                        "backend"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Junior Web Developer",
+            "company": "Creative Code Studio",
+            "dates": "Aug 2017 \u2013 May 2019",
+            "bullets": [
+                {
+                    "text": "Collaborated with designers to implement pixel-perfect landing pages using HTML5, CSS3, and JavaScript.",
+                    "target_audiences": [
+                        "frontend",
+                        "fullstack"
+                    ]
+                },
+                {
+                    "text": "Assisted in backend development tasks using PHP (Laravel) and MySQL for client CMS projects.",
+                    "target_audiences": [
+                        "backend",
+                        "fullstack"
+                    ]
+                },
+                {
+                    "text": "Automated server provisioning and configuration management using Ansible scripts.",
+                    "target_audiences": [
+                        "devops",
+                        "backend"
+                    ]
+                }
+            ]
+        }
+    ],
+    "education": "<b>B.Sc. in Computer Science</b>, University of Technology \u00b7 2013\u20132017",
+    "languages": "English \u2013 Native | Spanish \u2013 Fluent"
+}
