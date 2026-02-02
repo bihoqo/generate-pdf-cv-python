@@ -44,6 +44,7 @@
             "title": "Senior Software Engineer",
             "company": "TechNova Solutions",
             "dates": "Jan 2022 \u2013 Present",
+            "intro": "Lead developer for the company's flagship e-commerce product, managing a team of 5 engineers.",
             "bullets": [
                 {
                     "text": "Architected and built a microservices-based e-commerce platform using Node.js and Go, handling 10k+ concurrent users.",
@@ -80,6 +81,7 @@
             "title": "Full Stack Developer",
             "company": "Orbit Systems",
             "dates": "Jun 2019 \u2013 Dec 2021",
+            "intro": "",
             "bullets": [
                 {
                     "text": "Developed responsive, interactive user interfaces using React and Redux, ensuring cross-browser compatibility.",
@@ -108,6 +110,7 @@
             "title": "Junior Web Developer",
             "company": "Creative Code Studio",
             "dates": "Aug 2017 \u2013 May 2019",
+            "intro": "",
             "bullets": [
                 {
                     "text": "Collaborated with designers to implement pixel-perfect landing pages using HTML5, CSS3, and JavaScript.",

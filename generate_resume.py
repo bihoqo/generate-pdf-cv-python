@@ -244,6 +244,7 @@ DEFAULT_CONTENT = {
             "title": "Senior Software Engineer",
             "company": "TechNova Solutions",
             "dates": "Jan 2022 – Present",
+            "intro": "Lead developer for the company's flagship e-commerce product, managing a team of 5 engineers.",
             "bullets": [
                 {
                     "text": "Architected and built a microservices-based e-commerce platform using Node.js and Go, handling 10k+ concurrent users.",
@@ -267,6 +268,7 @@ DEFAULT_CONTENT = {
             "title": "Full Stack Developer",
             "company": "Orbit Systems",
             "dates": "Jun 2019 – Dec 2021",
+            "intro": "",
             "bullets": [
                 {
                     "text": "Developed responsive, interactive user interfaces using React and Redux, ensuring cross-browser compatibility.",
@@ -286,6 +288,7 @@ DEFAULT_CONTENT = {
             "title": "Junior Web Developer",
             "company": "Creative Code Studio",
             "dates": "Aug 2017 – May 2019",
+            "intro": "",
             "bullets": [
                 {
                     "text": "Collaborated with designers to implement pixel-perfect landing pages using HTML5, CSS3, and JavaScript.",
@@ -400,6 +403,10 @@ def validate_json_structure(data):
                         errors.append(f"Experience item #{idx} bullet #{b_idx} missing 'text'.")
                     if "target_audiences" in bullet and not isinstance(bullet["target_audiences"], list):
                         errors.append(f"Experience item #{idx} bullet #{b_idx} 'target_audiences' must be a list.")
+
+            # Validate optional intro
+            if "intro" in job and not isinstance(job["intro"], str):
+                errors.append(f"Experience item #{idx} 'intro' must be a string.")
 
     if errors:
         return False, "\n".join(errors)
@@ -584,6 +591,8 @@ def create_pdf(filename, content, target_audience):
         fontSize=10,
         leading=14,
         alignment=TA_LEFT,
+        leftIndent=0,
+        firstLineIndent=0,
         spaceAfter=4
     )
 
@@ -649,7 +658,7 @@ def create_pdf(filename, content, target_audience):
             Paragraph(title_text, style_body),
             Paragraph(date_text, ParagraphStyle('DateRight', parent=style_body, alignment=TA_RIGHT))
         ]]
-        t_job = Table(row_data, colWidths=[5.5*inch, 2.0*inch])
+        t_job = Table(row_data, colWidths=[5.5*inch, 2.0*inch], hAlign='LEFT')
         t_job.setStyle(TableStyle([
             ('LEFTPADDING', (0,0), (-1,-1), 0),
             ('RIGHTPADDING', (0,0), (-1,-1), 0),
@@ -657,6 +666,12 @@ def create_pdf(filename, content, target_audience):
             ('BOTTOMPADDING', (0,0), (-1,-1), 2),
         ]))
         story.append(t_job)
+
+        # Optional Intro
+        if "intro" in job and job["intro"].strip():
+            formatted_intro = format_text_with_bold_tech(job["intro"])
+            story.append(Paragraph(formatted_intro, style_body))
+            story.append(Spacer(1, 2))
 
         for bullet in filtered_bullets:
             formatted_bullet = format_text_with_bold_tech(bullet["text"])

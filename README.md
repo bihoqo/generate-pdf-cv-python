@@ -69,6 +69,7 @@ Below is the structure of the `content.json` file. You can use this as a templat
             "title": "Senior Software Engineer",
             "company": "TechNova Solutions",
             "dates": "Jan 2022 – Present",
+            "intro": "Lead developer for the company's flagship e-commerce product, managing a team of 5 engineers.",
             "bullets": [
                 {
                     "text": "Architected and built a microservices-based e-commerce platform using Node.js and Go, handling 10k+ concurrent users.",
@@ -81,6 +82,22 @@ Below is the structure of the `content.json` file. You can use this as a templat
                 {
                     "text": "Implemented a fully automated CI/CD pipeline using GitHub Actions and ArgoCD, reducing deployment time from 1 hour to 5 minutes.",
                     "target_audiences": ["devops", "backend"]
+                }
+            ]
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Orbit Systems",
+            "dates": "Jun 2019 – Dec 2021",
+            "intro": "",
+            "bullets": [
+                {
+                    "text": "Developed responsive, interactive user interfaces using React and Redux, ensuring cross-browser compatibility.",
+                    "target_audiences": ["frontend", "fullstack"]
+                },
+                {
+                    "text": "Built and maintained RESTful APIs using Python (Django) and integrated with PostgreSQL databases.",
+                    "target_audiences": ["backend", "fullstack"]
                 }
             ]
         }
@@ -98,7 +115,7 @@ The CV content is managed in `content.json`. Below is an explanation of the key 
 - `contact_info`: A dictionary containing your `phone`, `email`, and optional `linkedin_url` and `github_url`.
 - `summary`: A list of summary objects.
 - `skills`: A list of skill category objects.
-- `experience`: A list of job objects, each containing `title`, `company`, `dates`, and a list of `bullets`.
+- `experience`: A list of job objects, each containing `title`, `company`, `dates`, an optional `intro` (displayed above bullets), and a list of `bullets`.
 - `education`: A string describing your education.
 - `languages`: A string describing your language proficiencies.
 
