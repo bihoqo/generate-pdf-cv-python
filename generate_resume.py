@@ -133,14 +133,14 @@ TECH_TERMS = sorted([
     "Hexagonal Architecture", "Domain-Driven Design", "DDD", "CQRS", "Event Sourcing",
     "Actor Model", "Reactive Programming", "Functional Reactive Programming", "FRP",
     "Design Patterns", "Singleton", "Factory", "Observer", "Strategy", "Decorator",
-    "Adapter", "Facade", "Proxy", "Command", "Iterator", "State", "Template Method",
+    "Adapter", "Facade", "Proxy", "Command", "Iterator", "Template Method",
     "Visitor", "Composite", "Bridge", "Flyweight", "Chain of Responsibility", "Mediator",
     "Memento", "Interpreter", "Anti-patterns", "Code Smells", "Technical Debt",
     "Refactoring", "Pair Programming", "Mob Programming", "Code Review", "Static Analysis",
     "Dynamic Analysis", "Profiling", "Benchmarking", "Optimization", "Scalability",
     "High Availability", "Fault Tolerance", "Disaster Recovery", "CAP Theorem", "ACID",
-    "BASE", "Sharding", "Replication", "Partitioning", "Caching", "Load Balancing",
-    "Rate Limiting", "Throttling", "Circuit Breaker", "Bulkhead", "Retry", "Timeout",
+    "Sharding", "Replication", "Partitioning", "Caching", "Load Balancing",
+    "Rate Limiting", "Throttling", "Circuit Breaker", "Bulkhead",
     "Idempotency", "Consistency", "Availability", "Partition Tolerance",
 
     # --- Tools & IDEs ---
